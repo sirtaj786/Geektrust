@@ -41,12 +41,12 @@ import { ADD_CART_ITEM, DECREASE_ITEM_QUANTITY, DELETE_CART_ITEM, GET_TOTAL_ITEM
   
   const incrementQuantity=(cart,id)=>{
   
-    return cart.filter((e)=>e.id==id?e.currentQuantity++:e)
+    return cart.filter((el)=>el.id==id?el.currentQuantity++:el)
      
   }
   const decrementQuantity=(cart,id)=>{
   
-    return cart.filter((e)=>e.id==id && e.currentQuantity>1?e.currentQuantity--:e)
+    return cart.filter((el)=>el.id==id && el.currentQuantity>1?el.currentQuantity--:el)
      
   }
   
